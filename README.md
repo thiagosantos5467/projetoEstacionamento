@@ -1,3 +1,3 @@
 # projetoEstacionamento
 
-## Esse projeto consiste em criar um estacionamento com determinado número de vagas e só deixar estacionar nele, se houver vagas disponíveis.
+## Esse projeto consiste na criação de um controlador de estacionamento o qual é possível, estacionar um carro, remover o carro do estacionamento, visualizar os carros já estacionados e listar as características dos carros que foram estacionados.
