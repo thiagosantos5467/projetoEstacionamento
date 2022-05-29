@@ -10,16 +10,25 @@ public class Estacionamento {
     public Estacionamento() {
     }
 
-    List<Object> vagas = new ArrayList<>();
+    public int getNumeroDeVagas() {
+        return numeroDeVagas;
+    }
 
-    Carro corsa = new Carro("corsa", "Cinza", "XYZ-1234", 180);
-    Carro uno = new Carro("uno","Preto", "QWE-1234", 200);
-    Carro palio = new Carro("palio","Branco", "QWR-5432", 190);
+    List<Carro> vagas = new ArrayList<>();
+
+    Carro corsa = new Carro("corsa", "cinza", "XYZ-1234", 180);
+    Carro uno = new Carro("uno", "preto", "QWE-1234", 200);
+    Carro palio = new Carro("palio", "branco", "QWR-5432", 190);
 
     List<String> estacionados = new ArrayList<>();
 
-    public void estacionar(Carro carro){
+    public void estacionar(Carro carro) {
         vagas.add(carro);
         estacionados.add(carro.getNome());
+    }
+
+    public void removerCarro(Carro carro) {
+        vagas.remove(carro);
+        estacionados.remove(carro.getNome());
     }
 }
